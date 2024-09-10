@@ -1,11 +1,13 @@
 package org.mracus.corp;
 
 public class Board {
-    public void state(int errorCount, String word, String errorLetter, String currentLetter) {
+    public void state(StringBuilder shadowWord, StringBuilder errorLetters, int errorCount, char currentLetter) {
         drawBoard(errorCount);
-        System.out.println("Слово: " + word);
-        System.out.printf("Ошибки (%s): %s\n", errorCount, errorLetter);
-        System.out.println("Буква: " + currentLetter);
+        System.out.println("Слово: " + shadowWord);
+        System.out.printf("Ошибки (%s): %s\n", errorCount, errorLetters);
+        if (currentLetter != ' ') {
+            System.out.println("Буква: " + currentLetter);
+        }
     }
 
     private void drawBoard(int count) {

@@ -18,8 +18,8 @@ public class Dictionary {
     }
 
     public String getWord() {
-        int wordNum = new Random().nextInt(dictionary.size());
-        return dictionary.get(wordNum).toUpperCase();
+        int wordRndNum = new Random().nextInt(dictionary.size());
+        return dictionary.get(wordRndNum).toUpperCase();
     }
 
     private void readDictionary() {

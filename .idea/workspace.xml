@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0af257d-693e-49af-89ba-4adef7b1f9d5" name="Changes" comment="Added dictionary file and readDictionary() from file">
+    <list default="true" id="b0af257d-693e-49af-89ba-4adef7b1f9d5" name="Changes" comment="Get random word from dictionary">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Dictionary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Main.java" afterDir="false" />
     </list>
@@ -38,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Game.executor": "Run",
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -51,7 +54,20 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.mracus.corp.Game" />
+      <module name="Balda" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mracus.corp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.mracus.corp.Main" />
       <module name="Balda" />
@@ -68,6 +84,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Game" />
       </list>
     </recent_temporary>
   </component>
@@ -104,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725979427830</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Get random word from dictionary">
+      <option name="closed" value="true" />
+      <created>1725980227866</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725980227866</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +147,7 @@
     <MESSAGE value="init Balda" />
     <MESSAGE value="Create Board.java for print game board" />
     <MESSAGE value="Added dictionary file and readDictionary() from file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dictionary file and readDictionary() from file" />
+    <MESSAGE value="Get random word from dictionary" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get random word from dictionary" />
   </component>
 </project>
