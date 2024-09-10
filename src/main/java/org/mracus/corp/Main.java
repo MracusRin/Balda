@@ -3,6 +3,7 @@ package org.mracus.corp;
 public class Main {
     public static void main(String[] args) {
         Board board = new Board();
-        board.state(6, "hello", "A, D", "D");
+        Dictionary dictionary = new Dictionary();
+        board.state(6, dictionary.getWord(), "A, D", "D");
     }
 }
