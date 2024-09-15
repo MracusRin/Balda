@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0af257d-693e-49af-89ba-4adef7b1f9d5" name="Changes" comment="Get random word from dictionary">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Game.java" afterDir="false" />
+    <list default="true" id="b0af257d-693e-49af-89ba-4adef7b1f9d5" name="Changes" comment="Added Game class. First iteration of game">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mracus/corp/balda/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mracus/corp/balda/GameDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mracus/corp/balda/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mracus/corp/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,11 +56,11 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.mracus.corp.Game" />
+      <option name="MAIN_CLASS_NAME" value="org.mracus.corp.balda.Game" />
       <module name="Balda" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.mracus.corp.*" />
+          <option name="PATTERN" value="org.mracus.corp.balda.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,7 +73,7 @@
       <module name="Balda" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.mracus.corp.*" />
+          <option name="PATTERN" value="org.mracus.corp.balda.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725980227866</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Game class. First iteration of game">
+      <option name="closed" value="true" />
+      <created>1725991928118</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725991928118</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +156,7 @@
     <MESSAGE value="Create Board.java for print game board" />
     <MESSAGE value="Added dictionary file and readDictionary() from file" />
     <MESSAGE value="Get random word from dictionary" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get random word from dictionary" />
+    <MESSAGE value="Added Game class. First iteration of game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Game class. First iteration of game" />
   </component>
 </project>

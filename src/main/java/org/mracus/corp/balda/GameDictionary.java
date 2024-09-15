@@ -1,4 +1,4 @@
-package org.mracus.corp;
+package org.mracus.corp.balda;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -7,14 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Dictionary {
-    private final int MIN_WORD_LENGTH = 6;
-    private final int MAX_WORD_LENGTH = 7;
-    private final String pathToDictionary = "src/main/resources/ru_dictionary.txt";
+public class GameDictionary {
+    private final Path file = Path.of("src/main/resources/ru_dictionary.txt");
     private List<String> dictionary = new ArrayList<>();
 
-    public Dictionary() {
-        readDictionary();
+    public GameDictionary(int minWordLength, int maxWordLength) {
+        readGameDictionary(minWordLength, maxWordLength);
     }
 
     public String getWord() {
@@ -22,11 +20,10 @@ public class Dictionary {
         return dictionary.get(wordRndNum).toUpperCase();
     }
 
-    private void readDictionary() {
-        Path file = Path.of(pathToDictionary);
+    private void readGameDictionary(int minWordLength, int maxWordLength) {
         try {
             dictionary = Files.readAllLines(file).stream()
-                    .filter(s -> s.length() >= MIN_WORD_LENGTH && s.length() < MAX_WORD_LENGTH).toList();
+                    .filter(s -> s.length() >= minWordLength && s.length() < maxWordLength).toList();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
