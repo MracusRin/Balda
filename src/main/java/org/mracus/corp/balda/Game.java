@@ -10,6 +10,7 @@ public class Game {
     private String currentWord;
     private char currentLetter;
     private int errorCount;
+    private int wordLength;
 
     private Game(Board board, GameDictionary gameDictionary) {
         this.board = board;
@@ -17,11 +18,26 @@ public class Game {
     }
 
     private void init() {
-        this.currentWord = gameDictionary.getWord();
+        difficulty();
+        this.currentWord = gameDictionary.getWord(wordLength);
         this.shadowWord = new StringBuilder("_".repeat(currentWord.length()));
         this.errorLetters = new StringBuilder();
         this.errorCount = 0;
         this.currentLetter = 0;
+    }
+
+    private void difficulty() {
+        int result = 0;
+        Scanner scanner = new Scanner(System.in);
+        while (result == 0 || result > 10) {
+            System.out.print("Введите уровень сложности от 1 до 10: ");
+            try {
+                result = Integer.parseInt(scanner.next());
+            } catch (NumberFormatException e) {
+                result = 0;
+            }
+        }
+        wordLength = result + 4;
     }
 
     private void nextLetter() {
@@ -29,7 +45,7 @@ public class Game {
         Scanner scanner = new Scanner(System.in);
         while (input.length() != 1) {
             System.out.print("Введите одну букву: ");
-            input = scanner.next();
+            input = scanner.nextLine();
         }
         this.currentLetter = input.toUpperCase().charAt(0);
     }
@@ -82,10 +98,10 @@ public class Game {
 
     private void beginGame() {
         Scanner scanner = new Scanner(System.in);
-        String result = "";
+        String result;
         while (true) {
             System.out.print("Игра в Балду. Начать новую игру? y/n: ");
-            result = scanner.next();
+            result = scanner.nextLine();
             if (result.equals("y") || result.equals("н")) {
                 gameLoop();
             } else if (result.equals("n") || result.equals("т")) {
@@ -95,7 +111,7 @@ public class Game {
     }
 
     public static void start() {
-        Game game = new Game(new Board(), new GameDictionary(6, 7));
+        Game game = new Game(new Board(), new GameDictionary());
         game.beginGame();
     }
 }
