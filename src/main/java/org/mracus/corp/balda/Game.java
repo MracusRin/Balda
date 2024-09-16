@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Game {
     private final Board board;
     private final GameDictionary gameDictionary;
+    private final String[] args;
     private StringBuilder errorLetters;
     private StringBuilder shadowWord;
     private String currentWord;
@@ -12,9 +13,10 @@ public class Game {
     private int errorCount;
     private int wordLength;
 
-    private Game(Board board, GameDictionary gameDictionary) {
+    private Game(Board board, GameDictionary gameDictionary, String... args) {
         this.board = board;
         this.gameDictionary = gameDictionary;
+        this.args = args;
     }
 
     private void init() {
@@ -79,8 +81,7 @@ public class Game {
 
     private void gameLoop() {
         init();
-        // TODO: не забудь убрать подсказку
-        System.out.println(currentWord);
+        debugLog();
         while (true) {
             board.printState(shadowWord, errorLetters, errorCount, currentLetter);
             if (errorCount == 6) {
@@ -110,8 +111,14 @@ public class Game {
         }
     }
 
-    public static void start() {
-        Game game = new Game(new Board(), new GameDictionary());
+    private void debugLog() {
+        if (args.length != 0 && args[0].equals("debug")) {
+            System.out.printf("[WARNING] debug mode on. Current word: %s\n", currentWord);
+        }
+    }
+
+    public static void start(String... args) {
+        Game game = new Game(new Board(), new GameDictionary(), args);
         game.beginGame();
     }
 }

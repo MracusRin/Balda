@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0af257d-693e-49af-89ba-4adef7b1f9d5" name="Changes" comment="Added start game condition.Code optimization">
+    <list default="true" id="b0af257d-693e-49af-89ba-4adef7b1f9d5" name="Changes" comment="Added choice of game difficulty level">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mracus/corp/balda/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mracus/corp/balda/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mracus/corp/balda/GameDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mracus/corp/balda/GameDictionary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +68,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.mracus.corp.Main" />
       <module name="Balda" />
+      <option name="PROGRAM_PARAMETERS" value="debug" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.mracus.corp.balda.*" />
@@ -79,6 +79,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Game" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -143,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726422943204</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added choice of game difficulty level">
+      <option name="closed" value="true" />
+      <created>1726425994693</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726425994693</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,6 +176,7 @@
     <MESSAGE value="Get random word from dictionary" />
     <MESSAGE value="Added Game class. First iteration of game" />
     <MESSAGE value="Added start game condition.Code optimization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added start game condition.Code optimization" />
+    <MESSAGE value="Added choice of game difficulty level" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added choice of game difficulty level" />
   </component>
 </project>
