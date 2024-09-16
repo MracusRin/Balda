@@ -31,7 +31,7 @@ public class Game {
     private void difficulty() {
         int result = 0;
         Scanner scanner = new Scanner(System.in);
-        while (result == 0 || result > 10) {
+        while (result < 1 || result > 10) {
             System.out.print("Введите уровень сложности от 1 до 10: ");
             try {
                 result = Integer.parseInt(scanner.next());

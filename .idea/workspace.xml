@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0af257d-693e-49af-89ba-4adef7b1f9d5" name="Changes" comment="Added choice of game difficulty level">
+    <list default="true" id="b0af257d-693e-49af-89ba-4adef7b1f9d5" name="Changes" comment="Added debug mode. args[0] = &quot;debug&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mracus/corp/balda/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mracus/corp/balda/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +37,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Game.executor": "Run",
+    "Application.GameGUI.executor": "Run",
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -65,6 +65,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.mracus.corp.balda.GameGUI" />
+      <module name="Balda" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mracus.corp.balda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.mracus.corp.Main" />
       <module name="Balda" />
@@ -80,12 +93,14 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.GameGUI" />
       <item itemvalue="Application.Game" />
       <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.GameGUI" />
         <item itemvalue="Application.Game" />
       </list>
     </recent_temporary>
@@ -155,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726425994693</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added debug mode. args[0] = &quot;debug&quot;">
+      <option name="closed" value="true" />
+      <created>1726508377541</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1726508377541</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +200,7 @@
     <MESSAGE value="Added Game class. First iteration of game" />
     <MESSAGE value="Added start game condition.Code optimization" />
     <MESSAGE value="Added choice of game difficulty level" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added choice of game difficulty level" />
+    <MESSAGE value="Added debug mode. args[0] = &quot;debug&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added debug mode. args[0] = &quot;debug&quot;" />
   </component>
 </project>
